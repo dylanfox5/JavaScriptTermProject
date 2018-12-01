@@ -1,0 +1,84 @@
+﻿body {
+    background-color: #092A64;
+    overflow: hidden;
+}
+
+div.map {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 72px;
+    left: 300px;
+
+
+}
+
+img.map {
+    margin-left: -7.5%;
+    background-repeat: no-repeat;
+    background-position: center;
+    zoom: 1.5;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.slidecontainer {
+    width: 100%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+header {
+    background-color: #092A64;
+    color: gold;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+}
+
+h2.title {
+    position: relative;
+    background-color: #092A64;
+    padding: 20px;
+    color: white;
+    margin-top: 0px;
+    border-bottom: 5px solid gold;
+}
+
+div.content {
+    margin-left: 325px;
+    padding: 1px 16px;
+    overflow: hidden;
+}
+
+div.gym {
+    position: absolute;
+    top: 520px;
+    left: 575px;
+}
+
+div.football {
+    position: absolute;
+    top: 565px;
+    left: 700px;
+}
+
+i:hover{
+    color: blue;
+}
+
+footer {
+    position: absolute;
+    bottom: 5px;
+}
