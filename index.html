@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="index.css" />
     <script type="text/javascript" src="jquery-3.3.1.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="index.js"></script>
 
 </head>
 <body>
@@ -20,21 +21,91 @@
             <img src="mapGU.png" alt="map image" class="map" />
 
             <div class="gym">
-                <i class="material-icons" style="font-size:32px">place</i>
+                <i class="material-icons" style="font-size:32px" onclick="toggleGym()">place</i>
+                <span class="popupText" id="gymPopup">Closson Gym</span>
             </div>
 
             <div class="football">
-                <i class="material-icons" style="font-size:32px">place</i>
+                <i class="material-icons" style="font-size:32px" onclick="toggleFootball()">place</i>
+                <span class="popupText" id="footballPopup">Huntsman Football Field</span>
             </div>
+
+            <div class="admin">
+                <i class="material-icons" style="font-size:32px" onclick="toggleAdmin()">place</i>
+                <span class="popupText" id="adminPopup">Higdon Administration Building</span>
+            </div>
+
+            <div class="shaw">
+                <i class="material-icons" style="font-size:32px" onclick="toggleShaw()">place</i>
+                <span class="popupText" id="shawPopup">Shaw Center</span>
+            </div>
+
+            <div class="msc">
+                <i class="material-icons" style="font-size:32px" onclick="toggleMSC()">place</i>
+                <span class="popupText" id="mscPopup">Memorial Student Center</span>
+            </div>
+
+            <div class="bigG">
+                <i class="material-icons" style="font-size:32px" onclick="toggleBigG()">place</i>
+                <span class="popupText" id="bigGPopup">Big G Lake</span>
+            </div>
+
+            <div class="founders">
+                <i class="material-icons" style="font-size:32px" onclick="toggleFounders()">place</i>
+                <span class="popupText" id="foundersPopup">Founders Lake</span>
+            </div>
+
+            <div class="commons">
+                <i class="material-icons" style="font-size:32px" onclick="toggleCommons()">place</i>
+                <span class="popupText" id="commonsPopup">Floyd M. McDowell Commons</span>
+            </div>
+
+            <div class="resch">
+                <i class="material-icons" style="font-size:32px" onclick="toggleResch()">place</i>
+                <span class="popupText" id="reschPopup">Resch Science and Technology Hall</span>
+            </div>
+
+            <div class="briggs">
+                <i class="material-icons" style="font-size:32px" onclick="toggleBriggs()">place</i>
+                <span class="popupText" id="briggsPopup">Briggs Hall</span>
+            </div>
+
+            <div class="zimmerman">
+                <i class="material-icons" style="font-size:32px" onclick="toggleZimmerman()">place</i>
+                <span class="popupText" id="zimmermanPopup">Zimmerman Hall</span>
+            </div>
+
+            <div class="tess">
+                <i class="material-icons" style="font-size:32px" onclick="toggleTess()">place</i>
+                <span class="popupText" id="tessPopup">Tess Morgan Residence Hall</span>
+            </div>
+
+            <div class="walker">
+                <i class="material-icons" style="font-size:32px" onclick="toggleWalker()">place</i>
+                <span class="popupText" id="walkerPopup">Walker Residence Hall</span>
+            </div>
+
+            <div class="gunsulley">
+                <i class="material-icons" style="font-size:32px" onclick="toggleGunsulley()">place</i>
+                <span class="popupText" id="gunsulleyPopup">Gunsolley Residence Hall</span>
+            </div>
+
+            <div class="graybill">
+                <i class="material-icons" style="font-size:32px" onclick="toggleGraybill()">place</i>
+                <span class="popupText" id="graybillPopup">Graybill Residence Hall</span>
+            </div>
+
+            <div class="library">
+                <i class="material-icons" style="font-size:32px" onclick="toggleLibrary()">place</i>
+                <span class="popupText" id="libraryPopup">Frederick Mason Smith Library</span>
+            </div>
+
+            <p id="text">Hello World</p>
         </div>
 
 
 
-        <footer class="slidecontainer">
-            <p>Default range slider:</p>
-            <input type="range" min="1" max="100" value="50">
-            <i class="material-icons">place</i>
-        </footer>
+
 
     </div>
 

@@ -9,11 +9,10 @@ div.map {
     width: 100%;
     top: 72px;
     left: 300px;
-
-
 }
 
 img.map {
+    height: auto;
     margin-left: -7.5%;
     background-repeat: no-repeat;
     background-position: center;
@@ -62,6 +61,19 @@ div.content {
     overflow: hidden;
 }
 
+p {
+    visibility: hidden;
+    position: absolute;
+    height: 100px;
+    width: 200px;
+    top: 25px;
+    left: 1050px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+}
+
 div.gym {
     position: absolute;
     top: 520px;
@@ -70,15 +82,148 @@ div.gym {
 
 div.football {
     position: absolute;
-    top: 565px;
+    top: 550px;
     left: 700px;
 }
 
-i:hover{
+div.admin {
+    position: absolute;
+    top: 380px;
+    left: 580px;
+}
+
+div.shaw {
+    position: absolute;
+    top: 415px;
+    left: 665px;
+}
+
+div.msc {
+    position: absolute;
+    top: 350px;
+    left: 610px;
+}
+
+div.bigG {
+    position: absolute;
+    top: 550px;
+    left: 840px;
+}
+
+div.founders {
+    position: absolute;
+    top: 215px;
+    left: 400px;
+}
+
+div.commons {
+    position: absolute;
+    top: 280px;
+    left: 625px;
+}
+
+div.resch {
+    position: absolute;
+    top: 460px;
+    left: 540px;
+}
+
+div.briggs {
+    position: absolute;
+    top: 410px;
+    left: 565px;
+}
+
+div.zimmerman {
+    position: absolute;
+    top: 450px;
+    left: 600px;
+}
+
+div.tess {
+    position: absolute;
+    top: 280px;
+    left: 515px;
+}
+
+div.walker {
+    position: absolute;
+    top: 280px;
+    left: 565px;
+}
+
+div.gunsulley {
+    position: absolute;
+    top: 310px;
+    left: 645px;
+}
+
+div.graybill {
+    position: absolute;
+    top: 350px;
+    left: 660px;
+}
+
+div.library {
+    position: absolute;
+    top: 395px;
+    left: 480px;
+}
+
+i:hover {
     color: blue;
 }
 
-footer {
+/* Animations for Popups */
+
+.popupText {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
     position: absolute;
-    bottom: 5px;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+.popupText::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
