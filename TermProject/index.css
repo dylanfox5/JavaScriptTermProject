@@ -1,5 +1,5 @@
 ﻿body {
-    background-color: gainsboro;
+    background-color: #092A64;
     overflow: hidden;
 }
 
@@ -14,6 +14,7 @@ div.map {
 }
 
 img.map {
+    margin-left: -7.5%;
     background-repeat: no-repeat;
     background-position: center;
     zoom: 1.5;
@@ -55,40 +56,95 @@ h2.title {
     border-bottom: 5px solid gold;
 }
 
-div.sidebar {
-    margin: 0;
-    padding: 0;
-    width: 300px;
-    background-color: #092A64;
-    position: absolute;
-    height: 100%;
-    overflow: auto;
-    top: 72px;
-    left: 0px;
-}
-
-div.sidebar a {
-    display: block;
-    color: white;
-    padding: 16px;
-    text-decoration: none;
-    font-size: 28px;
-}
-
-div.sidebar a.active {
-    background-color: #4CAF50;
-    color: white;
-}
-
-div.sidebar a:hover:not(.active) {
-    background-color: gold;
-    color: white;
-}
-
 div.content {
     margin-left: 325px;
     padding: 1px 16px;
     overflow: hidden;
+}
+
+div.gym {
+    position: absolute;
+    top: 54%;
+    left: 435px;
+}
+
+div.football {
+    position: absolute;
+    top: 420px;
+    left: 535px;
+}
+div.admin{
+	position: absolute;
+    top: 290px;
+    left: 440px;
+}
+div.shaw{
+	position: absolute;
+    top: 310px;
+    left: 500px;
+}
+div.msc{
+	position: absolute;
+    top: 260px;
+    left: 460px;
+}
+div.bigG{
+	position: absolute;
+    top: 430px;
+    left: 640px;
+}
+div.founders{
+	position: absolute;
+    top: 175px;
+    left: 290px;
+}
+div.commons{
+	position: absolute;
+    top: 210px;
+    left: 475px;
+}
+div.resch{
+	position: absolute;
+    top: 345px;
+    left: 410px;
+}
+div.briggs{
+	position: absolute;
+    top: 310px;
+    left: 427px;
+}
+div.zimmerman{
+	position: absolute;
+    top: 345px;
+    left: 455px;
+}
+div.tess{
+	position: absolute;
+    top: 220px;
+    left: 390px;
+}
+div.walker{
+	position: absolute;
+    top: 220px;
+    left: 427px;
+}
+div.gunsulley{
+	position: absolute;
+    top: 240px;
+    left: 490px;
+}
+div.graybill{
+	position: absolute;
+    top: 270px;
+    left: 510px;
+}
+div.library{
+	position: absolute;
+    top: 305px;
+    left: 360px;
+}
+i:hover{
+    color: blue;
 }
 
 footer {
