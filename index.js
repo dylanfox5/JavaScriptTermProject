@@ -2,7 +2,8 @@
 function toggleGym() {
     var popup = document.getElementById("gymPopup");
     var p = document.getElementById("text");
-    p.innerHTML = "The Closson Gym is..."
+    togglePicPopup("closson.jpg");
+    p.innerHTML = "The Closson Gym is...";
     p.classList.toggle("show");
     popup.classList.toggle("show");
 }
@@ -125,4 +126,17 @@ function toggleLibrary() {
     p.innerHTML = "The Frederick Mason Smith Library is..."
     p.classList.toggle("show");
     popup.classList.toggle("show");
+}
+
+function togglePicPopup(name) {
+    var img = document.getElementById("picPopup");
+    img.src = name;
+
+    if (img.style.visibility != "visible") {
+        img.style.visibility = "visible";
+    }
+    else {
+        img.style.visibility = "hidden";
+
+    }
 }
